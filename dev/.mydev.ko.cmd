@@ -1,0 +1,1 @@
+cmd_/root/os3/dev/mydev.ko := ld -r -EL  -maarch64linux -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds  --build-id  -o /root/os3/dev/mydev.ko /root/os3/dev/mydev.o /root/os3/dev/mydev.mod.o ;  true

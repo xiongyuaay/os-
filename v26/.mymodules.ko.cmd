@@ -1,0 +1,1 @@
+cmd_/root/v26/mymodules.ko := ld -r -EL  -maarch64linux -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds  --build-id  -o /root/v26/mymodules.ko /root/v26/mymodules.o /root/v26/mymodules.mod.o ;  true
