@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "openEuler Kernel Module",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/src/kernels/$(uname -r)/include",
+                "/usr/src/kernels/$(uname -r)/arch/x86/include",
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "MODULE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
+
