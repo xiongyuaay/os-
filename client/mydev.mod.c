@@ -26,12 +26,25 @@ static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
 	{ 0xbba681f6, "module_layout" },
-	{ 0xa58e3cf4, "cpu_hwcaps" },
-	{ 0x66cfa968, "cpu_hwcap_keys" },
-	{ 0x6dfb912f, "arm64_const_caps_ready" },
-	{ 0xe4bbc1dd, "kimage_voffset" },
-	{ 0xe007de41, "kallsyms_lookup_name" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x6bc3fbc0, "__unregister_chrdev" },
+	{ 0xa3696882, "kmem_cache_alloc_trace" },
+	{ 0xd056454c, "kmalloc_caches" },
+	{ 0x6060d44f, "__register_chrdev" },
+	{ 0xb35dea8f, "__arch_copy_to_user" },
+	{ 0xdb7305a1, "__stack_chk_fail" },
+	{ 0xcbd4898c, "fortify_panic" },
+	{ 0x4829a47e, "memcpy" },
+	{ 0x9166fada, "strncpy" },
+	{ 0x5a9f1d63, "memmove" },
+	{ 0x98cf60b3, "strlen" },
+	{ 0xb742fd7, "simple_strtol" },
+	{ 0x84bc974b, "__arch_copy_from_user" },
+	{ 0x88db9f48, "__check_object_size" },
+	{ 0x8f678b07, "__stack_chk_guard" },
+	{ 0x9c1e5bf5, "queued_spin_lock_slowpath" },
 	{ 0x7c32d0f0, "printk" },
+	{ 0x399a42c, "__ll_sc___cmpxchg_case_acq_4" },
 	{ 0x1fdc7df2, "_mcount" },
 };
 
@@ -41,4 +54,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "A9D1EB4C27105A042D4FA3B");
+MODULE_INFO(srcversion, "527137CE6C5655A0E698AD8");

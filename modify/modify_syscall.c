@@ -41,11 +41,16 @@ static inline void unprotect_memory(void)
 
 
 // 新的系统调用函数
-asmlinkage int hello(int a, int b) {
+asmlinkage int hello(/* int *a, int *b */void) {
+    int a = (int)current_pt_regs()->regs[0]; // 从寄存器 x0 获取参数 a
+    int b = (int)current_pt_regs()->regs[1]; // 从寄存器 x1 获取参数 b
+    
     printk("No 78 syscall has changed to hello\n");
     printk("a: %d, b: %d\n", a, b);
-    return a + b;
+    
+    return a + b; // 返回 a 和 b 的和
 }
+
 
 // 修改系统调用
 void modify_syscall(void) {

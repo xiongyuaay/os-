@@ -3,7 +3,9 @@
 #include<unistd.h>
 int main()
 { 
-    int ret=syscall(78,10,20); //after modify syscall 78
+    int a = 10;
+    int b = 20;
+    int ret=syscall(78,a,b); //after modify syscall 78
     printf("%d\n",ret);
     return 0;
 }
